@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.logo-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.hero-div {
+    width: 100%;
+}
+
+#home-hero-img {
+    
+}
+
+#home-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#charcuterie-board {
+    grid-column: 1/4;
+}
+
+#description-text {
+    grid-column: 4/6;
+}
+
+#countdown {
+    grid-column: 1/3;
+}
+
+#counter-text {
+    grid-column: 1/3
+}
+
+#home-tree {
+    grid-column: 3/6;
+}
+
+#movie-hero-img {
+
+}
+
+#movie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.movie-images {
+    height: 300px;
+    grid-column: 1/2;
+}
+
+.movie-paragraphs {
+    grid-column: 2/4;
+}

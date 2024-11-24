@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas</title>
+    <title>Christmas Home Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo-img" src="images/christmas-logo.png" alt="Christmas Website Logo"></a>
+            <ul>
+                <li><a href="traditions.html">Traditions</a></li>
+                <li><a href="movie-recs.html">Movie Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-div">
+            <img id="home-hero-img" src="images/christmas-decorating.jpeg" alt="Family decorating a Christmas tree">
+        </div>
+        <div id="home-grid">
+            
+                <img id="charcuterie-board" src="images/christmas-treats.jpg" alt="Christmas Charcuterie Board">
+                <p id="description-text">Christmas is a time for joy and a time to make memories with those you love. This site provides ideas and suggestions for holiday activities to bring you and your family joy. It provides a list of movie recommendations and suggestions for traditions to start doing as a family to serve others and to bring you closer together.</p>
+                <div id="countdown"></div>
+                <script>
+                    function updateCountdown()
+                    {
+                        const now = new Date();
+                        const christmas = new Date(now.getFullYear(), 11, 25);
+
+                        if (now > christmas)
+                    {
+                        christmas.setFullYear(now.getFullYear() + 1);
+                    }
+
+                    const diff = christmas - now;
+
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+                    const seconds = Math.floor ((diff / 1000) % 60);
+
+                    document.getElementById("countdown").innerHTML = `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`;
+
+                    }
+                    setInterval(updateCountdown, 1000);
+                </script>
+                <p id="counter-text">Christmas is coming up! Prepare soon to make memories and have fun with those you love.</p>
+                <img id="home-tree" src="images/plain-tree.jpg" alt="Christmas tree">
     
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="traditions.html">Traditions</a></li>
+                <li><a href="movie-recs.html">Movie Recommendations</a></li>
+            </ul>
+
+            <p>Christmas Copyright 2024 Sophie Archibald</p>
+
+            <img class="logo-img" src="images/christmas-logo.png" alt="Christmas Website Logo">
+
+
+        </nav>
+    </footer>
 </body>
 </html>
