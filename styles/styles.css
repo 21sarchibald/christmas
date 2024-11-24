@@ -57,3 +57,52 @@ body {
 .movie-paragraphs {
     grid-column: 2/4;
 }
+
+#traditions-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.traditions-titles {
+    text-align: center;
+}
+
+#christmas-lights-p {
+    grid-column: 1/3;
+}
+
+#outdoor-lights {
+    grid-column: 3/6;
+}
+
+#cookies-p {
+    grid-column: 1/4;
+}
+
+#cookies {
+    grid-column: 4/6
+}
+
+#tree-decorating {
+    grid-column: 1/3;
+}
+
+#tree-decorating-p {
+    grid-column: 3/6;
+}
+
+#gift-exchange {
+    grid-column: 1/3;
+}
+
+#gift-exchange-p {
+    grid-column: 3/6;
+}
+
+#caroling-p {
+    grid-column: 1/3;
+}
+
+#caroling {
+    grid-column: 3/6;
+}
