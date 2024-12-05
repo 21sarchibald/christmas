@@ -119,6 +119,9 @@ footer a:hover {
     background-color: transparent;
     color: #070D4E;
 }
+#site-plan:hover {
+    background-color: white;
+}
 #index-link {
     background-color: transparent;
     grid-column: 1/3;
