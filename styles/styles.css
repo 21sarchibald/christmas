@@ -211,7 +211,6 @@ footer img {
 }
 
 .movie-images {
-    width: 200px;
     grid-column: 1/2;
     padding: 20px;
     justify-content: center;
