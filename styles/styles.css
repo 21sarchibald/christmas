@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lilita+One&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -5,6 +7,14 @@
 
 body {
     margin: 0;
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color:#65A67F;
+    font-family: "Lilita One";
 }
 header {
     display: grid;
@@ -183,23 +193,96 @@ footer img {
 }
 
 #movie-hero-img {
+    width: 100%;
 
 }
 
 #movie-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: repeat(6, 1fr);
 }
 
+#movie-grid h2 {
+    text-align: center;
+}
 .movie-images {
-    height: 300px;
+    width: 200px;
     grid-column: 1/2;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
 }
 
-.movie-paragraphs {
-    grid-column: 2/4;
+#white-christmas {
+    grid-row: 1;
+    grid-column: 2;
 }
-
+#white-christmas-image {
+    height: 350px;
+    grid-column: 1;
+    grid-row: 1;
+}
+#white-christmas-p {
+    grid-column: 2;
+    grid-row: 1;
+}
+#grinch {
+    grid-row: 2;
+}
+#grinch-image {
+    height: 350px;
+    grid-column: 1;
+    grid-row: 2;
+}
+#grinch-p {
+    grid-column: 2;
+    grid-row: 2;
+}
+#home-alone {
+    grid-row: 3;
+    
+}
+#home-alone-image {
+    height: 350px;
+    grid-column: 1;
+    grid-row: 3;
+}
+#home-alone-p {
+    grid-column: 2;
+    grid-row: 3;
+}
+#elf {
+    grid-row: 4;
+}
+#elf-image {
+    height: 350px;
+    grid-column: 1;
+}
+#elf-p {
+    grid-column: 2;
+}
+#charlie-brown {
+    grid-row: 5;
+}
+#charlie-brown-image {
+    height: 350px;
+    grid-column: 1;
+}
+#charlie-brown-p {
+    grid-column: 2;
+}
+#wonderful-life {
+    grid-row: 6;
+}
+#wonderful-life-image {
+    height: 350px;
+    grid-column: 1;
+}
+#wonderful-life-p {
+    grid-column: 2;
+    grid-row: 6;
+}
 #traditions-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

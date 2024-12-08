@@ -7,54 +7,66 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img class="logo-img" src="images/christmas-logo.png" alt="Christmas Website Logo"></a>
-            <ul>
-                <li><a href="traditions.html">Traditions</a></li>
-                <li><a href="movie-recs.html">Movie Recommendations</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div id="content">
+        <header>
+            <nav id="header-nav">
+                <img class="logo-img" src="images/christmas-logo.png" alt="Christmas Website Logo">
+                <a href="index.html">Home</a>
+                <a href="traditions.html">Traditions</a>
+                <a href="movie-recs.html">Movie Recommendations</a>
+            </nav>
+        </header>
+        <main>
         <div class="hero-div">
             <img id="movie-hero-img" src="images/family-movie.webp" alt="Family watching a Christmas movie together.">
         </div>
         <h1>Movie Recommendations</h1>
         <div id="movie-grid">
-            <img class="movie-images" src="images/white-christmas.jpeg" alt="White Christmas movie poster">
-            <h2 class="movie-titles">White Christmas</h2>
-            <p class="movie-paragraphs">A wholesome family musical that will get the whole family in the mood to go skiing at a cozy cabin.</p>
-            <img class="movie-images" src="images/grinch-movie.jpg" alt="The Grinch movie poster">
-            <h2 class="movie-titles">The Grinch</h2>
-            <p class="movie-paragraphs">The Grinch is a fun family cartoon that focuses on the concept of change. The Grinch learns the true meaning of Christmas and realizes that happiness comes from helping others.</p>
-            <img class="movie-images" src="images/home-alone.webp" alt="Home Alone movie poster">
-            <h2 class="movie-titles">Home Alone</h2>
-            <p class="movie-paragraphs">Home Alone is a movie that focuses on character growth and the importance of families. It’s a fun holiday comedy that will get the kids excited for Christmas.</p>
-            <img class="movie-images" src="images/elf.webp" alt="Elf movie poster">
-            <h2 class="movie-titles">Elf</h2>
-            <p class="movie-paragraphs">Elf is a movie with comedic character growth and that teaches the true meaning of family. Buddy the Elf helps his long-lost father to learn what it really means to be humble and take care of your family.</p>
-            <img class="movie-images" src="images/charlie-brown.jpg" alt="Charlie Brown Christmas movie poster">
-            <h2 class="movie-titles">A Charlie Brown Christmas</h2>
-            <p class="movie-paragraphs">A holiday classic, A Charlie Brown Christmas teaches its audience that Christmas is more than the superficial celebrations that are so often focused on. Charlie Brown and his friends learn the true meaning of Christmas.</p>
-            <img class="movie-images" src="images/its-a-wonderful-life.jpg" alt="It's A Wonderful Life movie poster">
-            <h2 class="movie-titles">It's A Wonderful Life</h2>
-            <p class="movie-paragraphs">This movie teaches about what things truly matter in life. While hardship and financial struggles may arise, focusing on the good things, especially family, will help us all to become happier.</p>
+            <img id="white-christmas-image" class="white-christmas" class="movie-images" src="images/white-christmas.jpeg" alt="White Christmas movie poster">
+            <div id="white-christmas">
+                <h2 class="white-christmas" class="movie-titles">White Christmas</h2>
+                <p id="white-christmas-p" class="white-christmas" class="movie-paragraphs">A wholesome family musical that will get the whole family in the mood to go skiing at a cozy cabin.</p>
+            </div>
+            <img id="grinch-image" class ="grinch" class="movie-images" src="images/grinch-movie.jpg" alt="The Grinch movie poster">
+            <div class="grinch">
+                <h2 class ="grinch" class="movie-titles">The Grinch</h2>
+                <p id="grinch-p"class ="grinch" class="movie-paragraphs">The Grinch is a fun family cartoon that focuses on the concept of change. The Grinch learns the true meaning of Christmas and realizes that happiness comes from helping others.</p>
+            </div>
+            <img id="home-alone-image" class="home-alone" class="movie-images" src="images/home-alone.webp" alt="Home Alone movie poster">
+                <div id="home-alone">
+                <h2 class="home-alone" class="movie-titles">Home Alone</h2>
+            <p id="home-alone-p" class="home-alone" class="movie-paragraphs">Home Alone is a movie that focuses on character growth and the importance of families. It’s a fun holiday comedy that will get the kids excited for Christmas.</p>
+            </div>
+            <img id="elf-image" class="elf" class="movie-images" src="images/elf.webp" alt="Elf movie poster">
+            <div class="elf">
+                <h2 class ="elf" class="movie-titles">Elf</h2>
+                <p id="elf-p" class ="elf" class="movie-paragraphs">Elf is a movie with comedic character growth and that teaches the true meaning of family. Buddy the Elf helps his long-lost father to learn what it really means to be humble and take care of your family.</p>
+            </div>
+            <img id="charlie-brown-image" class="charlie-brown" class="movie-images" src="images/charlie-brown.jpg" alt="Charlie Brown Christmas movie poster">
+            <div class="charlie-brown">
+                <h2 class="charlie-brown" class="movie-titles">A Charlie Brown Christmas</h2>
+                <p id="charlie-brown-p" class="charlie-brown" class="movie-paragraphs">A holiday classic, A Charlie Brown Christmas teaches its audience that Christmas is more than the superficial celebrations that are so often focused on. Charlie Brown and his friends learn the true meaning of Christmas.</p>
+            </div>
+            <img id="wonderful-life-image" class="wonderful-life" class="movie-images" src="images/its-a-wonderful-life.jpg" alt="It's A Wonderful Life movie poster">
+            <div class="wonderful-life">
+                <h2 class="wonderful-life" class="movie-titles">It's A Wonderful Life</h2>
+                <p id="wonderful-life-p" class="wonderful-life" class="movie-paragraphs">This movie teaches about what things truly matter in life. While hardship and financial struggles may arise, focusing on the good things, especially family, will help us all to become happier.</p>
+            </div>
         </div>
         
         
     </main>
     <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="traditions.html">Traditions</a></li>
-                <li><a href="movie-recs.html">Movie Recommendations</a></li>
-            </ul>
+        <nav id="footer-nav">
+            
+            <a id="index-link" href="index.html">Home</a>
+            <a id="traditions-link" href="traditions.html">Traditions</a>
+            <a id="movie-link" href="movie-recs.html">Movie Recommendations</a>
+            
 
             <p>Christmas Copyright 2024 Sophie Archibald</p>
 
-            <a href="site-plan.html">Site Plan</a>
+            <a id="site-plan" href="site-plan.html">Site Plan</a>
 
             <img class="logo-img" src="images/christmas-logo.png" alt="Christmas Website Logo">
 
