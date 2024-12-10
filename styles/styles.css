@@ -286,47 +286,78 @@ footer img {
     grid-column: 2;
     grid-row: 6;
 }
-#traditions-grid {
+#traditions-hero-img {
+    width: 100%;
+}
+
+.traditions-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5% 15% 5% 15% 5% 15% 5% 15% 5% 15%);
+    justify-items: center;
+    margin: 0px;
 }
-
-.traditions-titles {
+.traditions-grid h2 {
     text-align: center;
+    grid-column: 1/6;
 }
-
+.traditions-grid img {
+    height: 300px;
+}
+#christmas-lights-title {
+    grid-row: 1;
+}
+.christmas-lights-items {
+    grid-row: 2;
+}
 #christmas-lights-p {
     grid-column: 1/3;
 }
-
 #outdoor-lights {
     grid-column: 3/6;
 }
-
+#cookies-title {
+    grid-row: 3;
+}
+.cookies-items {
+    grid-row: 4;
+}
 #cookies-p {
     grid-column: 1/4;
 }
-
 #cookies {
     grid-column: 4/6
 }
-
+#tree-decorating-title {
+    grid-row: 5;
+}
+.tree-decorating-items {
+    grid-row: 6;
+}
 #tree-decorating {
     grid-column: 1/3;
 }
-
 #tree-decorating-p {
     grid-column: 3/6;
 }
-
+#gift-exchange-title {
+    grid-row: 7;
+}
+.gift-exchange-items {
+    grid-row: 8;
+}
 #gift-exchange {
     grid-column: 1/3;
 }
-
 #gift-exchange-p {
     grid-column: 3/6;
 }
-
+#caroling-title {
+    grid-row: 9;
+}
+.caroling-items {
+    grid-row: 10;
+}
 #caroling-p {
     grid-column: 1/3;
 }
