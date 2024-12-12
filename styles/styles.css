@@ -298,6 +298,7 @@ footer img {
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(5% 15% 5% 15% 5% 15% 5% 15% 5% 15%);
     justify-items: center;
+    align-items: center;
     margin: 0px;
 }
 .traditions-grid h2 {
